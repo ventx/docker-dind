@@ -1,11 +1,11 @@
 # Description
 
-[Alpine](http://alpinelinux.org/) based Docker image forked from official [Docker dind](https://github.com/docker-library/docker/tree/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.09/dind) files with jq installed to use as [Jenkins PodTemplate](https://github.com/jenkinsci/kubernetes-plugin#pod-and-container-template-configuration).
+[Alpine](http://alpinelinux.org/) based Docker image forked from official [Docker dind](https://github.com/docker-library/docker/tree/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.09/dind) image with awscli and jq installed to use as [Jenkins PodTemplate](https://github.com/jenkinsci/kubernetes-plugin#pod-and-container-template-configuration).
 
 
 ## Docker Hub
 
-[ventx/dind](https://cloud.docker.com/u/ventx/repository/docker/ventx/docker-dind)
+[ventx/docker-dind](https://cloud.docker.com/u/ventx/repository/docker/ventx/docker-dind)
 
 
 # Docker image

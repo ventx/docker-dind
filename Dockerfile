@@ -7,7 +7,8 @@ RUN set -eux; \
 		e2fsprogs \
 		e2fsprogs-extra \
 		iptables \
-        jq \
+    jq \
+    py-pip \
 		xfsprogs \
 		xz \
 # pigz: https://github.com/moby/moby/pull/35697 (faster gzip implementation)
@@ -35,6 +36,9 @@ ENV DIND_COMMIT 37498f009d8bf25fbb6199e8ccd34bed84f2874b
 RUN set -eux; \
 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; \
 	chmod +x /usr/local/bin/dind
+
+# install awscli
+RUN pip install --upgrade awscli
 
 COPY dockerd-entrypoint.sh /usr/local/bin/
 RUN chmod a+x /usr/local/bin/dockerd-entrypoint.sh
