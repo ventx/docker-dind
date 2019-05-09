@@ -6,6 +6,7 @@ RUN set -eux; \
 		btrfs-progs \
 		e2fsprogs \
 		e2fsprogs-extra \
+    git \
 		iptables \
     jq \
     py-pip \

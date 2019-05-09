@@ -1,6 +1,6 @@
 # Description
 
-[Alpine](http://alpinelinux.org/) based Docker image forked from official [Docker dind](https://github.com/docker-library/docker/tree/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.09/dind) image with awscli and jq installed to use as [Jenkins PodTemplate](https://github.com/jenkinsci/kubernetes-plugin#pod-and-container-template-configuration).
+[Alpine](http://alpinelinux.org/) based Docker image forked from official [Docker dind](https://github.com/docker-library/docker/tree/27471a8b93e980bd4c51464ee933ed90fd36bf97/18.09/dind) image with awscli, git and jq installed to use as [Jenkins PodTemplate](https://github.com/jenkinsci/kubernetes-plugin#pod-and-container-template-configuration).
 
 
 ## Docker Hub
@@ -17,3 +17,8 @@
 # Installed Packages
 
 * [jq](https://pkgs.alpinelinux.org/package/v3.9/community/x86_64/jq)
+* [git](https://pkgs.alpinelinux.org/package/v3.9/community/x86_64/git)
+
+# Installed Packages (pip)
+
+* [awscli](https://pypi.org/project/awscli/)
